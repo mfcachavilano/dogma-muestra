@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dogma Viajes</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,700i" rel="stylesheet"> 
+	<link rel="icon" type="image/png" href="img/favicon.png" >
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87797371-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+	<script> <!-- este script hace que la pantalla se deslice lentamente hacia arriba y hacia abajo -->
+		jQuery(document).ready(function(){
+		    $('h2').append('<a href="#top" class="gototop"></a>');
+		    linkInterno = $('a[href^="#"]');
+		    linkInterno.on('click',function(e) {
+		    e.preventDefault();
+		    var href = $(this).attr('href');
+		    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+		    });
+		});
+	</script>
+
+	<script> <!-- este script anima la flecha de ir-arriba -->
+
+      $(document).ready(function(){
+ 
+      $(window).scroll(function(){
+        if( $(this).scrollTop() > 0 ){
+          $('.ir-arriba').slideDown(300);
+        } else {
+          $('.ir-arriba').slideUp(300);
+        }
+      });
+ 
+    });
+
+    </script>
+	
+</head>
+
+<body>
+
+	<div id="preloader">
+    	<div id="loader">&nbsp;</div>
+	</div>
+	
+	<a href="#" id="arriba"></a>
+
+		<figure id="volverarriba">
+	        <a href="#arriba" class="ir-arriba"><img src="img/flechaarriba.png"></a>
+	    </figure>
+
+	<div class="container-fluid">
+
+		<header>
+			<nav class="navbar navbar-default navbar-inverse navbar-static-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+							<span class="sr-only">MENÚ</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a href="index.html" class="navbar-header"><img src="img/logo.png" class="navimagen"></a>
+
+					</div>
+
+						<div class="collapse navbar-collapse" id="navbar-1">
+							<ul class="nav navbar-nav navbar-right text-lg">
+						        <li><a href="index.html">HOME</a></li>
+						        <li><a href="destinos.html">DESTINOS</a></li>
+						        <li><a href="index.html#contacto">CONTACTO</a></li>
+      						</ul>
+						</div> 	
+				</div>
+			</nav>
+		</header>
+
+	</div>
+
+	<div class="container">
+		<section>
+
+			<div class="row articulotit2">
+				<div class="panel-group" id="accordion" role="tablist">
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading1">
+								<h4 class="panel-title">
+									<a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-chevron-down"></span> VIAJES NACIONALES </a>
+								</h4>								
+							</div>
+
+							<div id="collapse1" class="panel-collapse collapse">
+								<div class="panel-body">																
+										<a href="#norte" class="btn btn-block btn-danger btn-sm">Norte Argentino</a>
+										<a href="#patagonia" class="btn btn-block btn-danger btn-sm">Patagonia Total</a>	
+										<a href="#puertomadryn" class="btn btn-block btn-danger btn-sm">Puerto Madryn</a>
+										<a href="#cataratas" class="btn btn-block btn-danger btn-sm">Cataratas del Iguazú</a>
+										<a href="#termas" class="btn btn-block btn-danger btn-sm">Termas de Rio Hondo</a>
+										<a href="#talampaya" class="btn btn-block btn-danger btn-sm">Talampaya</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="heading2">
+								<h4 class="panel-title">
+									<a href="#collapse2" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-chevron-down"></span> VIAJES INTERNACIONALES</a>
+								</h4>								
+							</div>
+
+							<div id="collapse2" class="panel-collapse collapse">
+								<div class="panel-body">							
+						                <a href="#machupicchu" class="btn btn-block btn-danger btn-sm">Machu Picchu x 4 <span class="glyphicon glyphicon-star" style="color:yellow;"></span></a>
+						                <a href="#brasilx4" class="btn btn-block btn-danger btn-sm">Litoral brasilero x 4 <span class="glyphicon glyphicon-star" style="color:yellow;"></span></a>
+						                <a href="#rio" class="btn btn-block btn-danger btn-sm">Rio, Buzios y Angra dos Reis</a>
+						                <a href="#salvadordebahia" class="btn btn-block btn-danger btn-sm">Salvador de Bahia</a>
+						                <a href="#puntacana" class="btn btn-block btn-danger btn-sm">Punta Cana</a>
+						                <a href="#camboriu" class="btn btn-block btn-danger btn-sm">Camboriu - Canasvieiras</a>						               
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				
+			</div>
+
+			<div class="row articulotit"><h1 class="text-center">VIAJES NACIONALES</h1></div>
+
+			<!-- <div class="col-md-offset-1 col-md-10"><div class="row articulotit3"> <h1 class="text-center">DESTINOS OCTUBRE</h1></div></div>  -->
+
+			<div class="row articulo" id="norte">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/nac/norte.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>NORTE ARGENTINO</b> <br><br>
+
+						EN BUS<br><br>						 
+
+						Salidas 11/10 y 15/11<br><br>
+
+						Incluye:<br><br>	
+
+						•06 días / 03 noches<br>
+						•Bus semi cama con servicio de snack a bordo<br>
+						•03 noches de alojamiento<br>
+						•régimen comidas según hotel<br>
+						•Excursiones: City tour Salta, Quebrada de Humahuaca, Purmamarca, cerro 7 colores, Humahuaca, Valles Calchaquies, Cafayate con visita a bodega y abra del infiernillo.<br>
+						•Coordinación permanente y guías locales<br>
+						•Pena folclórica con cena<br>
+						•Seguro de asistencia (consultar condiciones mayores de 70 años)<br><br>
+
+						BASE DOBLE POR PERSONA DESDE $6200<br>
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="patagonia">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/nac/patagonia.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>PATAGONIA TOTAL</b> <br><br>
+
+						GRUPAL EN BUS<br><br>
+						
+						Salidas 16/09 – 07/10 Y 21/10 - 04/11 Y 18/11 – 09/12<br><br>
+
+						Incluye:<br><br>
+
+						• 14 días / 09 noches bus-bus<br>
+						•  Bus Semi – cama desde Córdoba, Villa María, Río Cuarto y Santa Rosa (La Pampa) – Opcional bus cama $1599<br>
+						•  Traslados IN/OUT<br>
+						• 02 noches en Puerto Madryn<br>
+						• 03 noches en El Calafate<br>
+						• 03 noches en Ushuaia<br>
+						• 01 noche en Puerto Madryn de regreso (Opcion bus/jet sin noche en Puerto Madryn)<br>
+						• Alojamiento: hotelería 3* con Desayuno<br>
+						• Excursiones: según se detallan en el itinerario<br>
+						• Guías locales en cada excursión<br>
+						• Coordinador permanente<br>
+						• Asistencia al viajero.<br>
+						• Habitación a compartir confirmada<br><br>
+
+						BASE DOBLE POR PERSONA DESDE $20799 + 4 % GASTOS<br>
+					</p>
+				</div>
+			</div>
+
+			<!-- <div class="col-md-offset-1 col-md-10"><div class="row articulotit3" id="semanasanta">
+				<h1 class="text-center">SEMANA SANTA</h1>
+			</div> </div> -->
+
+			<div class="row articulo" id="puertomadryn">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/nac/puertomadryn.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>PUERTO MADRYN </b> <br><br>
+						GRUPAL EN BUS <br><br>
+						
+						Salida 09/09, 16/09 y 23/09 - 01/10, 07/10, 17/10 y 24/10<br><br>
+
+						Incluye:<br><br>
+
+						• Bus Grupal Mix desde Córdoba<br>
+						• 03 Noches de Alojamiento<br>
+						• Desayuno<br><br>
+						• Excursiones incluidas:<br>
+						• City Tour<br>
+						• Península Valdés hasta Puerto Pirámides<br>
+						• Valle Inferior con Rawson, Trelew y Gaiman<br>
+						• Coordinador Permanente<br>
+						• Asistencia al Viajero<br><br>
+
+
+						PRECIO POR PERSONA EN BASE DOBLE DESDE $4900<br>
+
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="cataratas">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/nac/cataratas.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>CATARATAS DEL IGUAZU</b> <br><br>
+
+						GRUPAL EN BUS<br><br>
+						
+						Salida domingos de septiembre a diciembre<br><br>
+
+						Incluye:<br><br>
+
+						    •Bus Grupal Mix desde Córdoba<br>
+							•04 Noches de Alojamiento<br>
+							•Desayuno y Cena<br>
+							•Excursiones incluidas:<br>
+							•Cataratas Argentinas y Brasileras<br>
+							•City Tour en Puerto Iguazú con Hito 3 Fronteras<br>
+							•Minas de Wanda<br>
+							•Ruinas de San Ignacio<br>
+							•Coordinador Permanente<br>
+							•Asistencia al Viajero<br><br>
+
+							BASE DOBLE POR PERSONA DESDE $5000<br>
+
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="termas">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/nac/termas.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>TERMAS DE RIO HONDO </b> <br><br>
+
+						GRUPAL EN BUS <br><br>
+						
+						Salida 12/09, 19/09, 26/09 – 03/10 y 10/10<br><br>
+
+						Incluye:<br><br>
+						   •Bus Semi Cama – Adicionar $400 bus cama por persona<br>
+						   •03 noches de alojamiento con PENSIÓN COMPLETA.<br>
+						   •Coordinador en viaje<br><br>
+							
+						PRECIO POR PERSONA EN BASE DOBLE/TRIPLE $4500<br>
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="talampaya">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/nac/talampaya.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>TALAMPAYA - VALLE DE LA LUNA</b> <br><br>
+
+						EN BUS <br><br>
+						
+						Salida 12/10<br><br>
+
+						Incluye:<br><br>
+						• 03 días/02 noches<br>
+						• Bus mix con servicio de snack a bordo<br>
+						• 02 nts de alojamiento con desayuno - Hotelería 3*<br>
+						• Excursiones: Parque Provincial Ischigualasto - Parque Nacional Talampaya y Cuesta de Miranda sin entradas<br>
+						• Coodinación permanente<br>
+						• Asistencia al Viajero<br><br>
+
+						PRECIO POR PERSONA DESDE $5700 POR PERSONA EN BASE DBL<br>
+
+						
+
+					</p>
+				</div>
+			</div>
+
+
+			<div class="row articulotit"><h1 class="text-center">VIAJES INTERNACIONALES</h1></div>
+
+			<div class="row articulo" id="machupicchu">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/int/machupicchu.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>MACHU PICCHU X 4</b> <br>
+
+						EN BUS <br><br>
+
+						*Visitamos 4 países ARGENTINA, BOLIVIA, PERU Y CHILE MONTAÑA, CULTURA Y PLAYA TODO EN UN SOLO VIAJE <br><br>
+
+
+						*SALIDAS desde Córdoba, Santiago, Tucumán y Salta: <br>
+
+						Salida 1 de de Enero 23hs<br>
+						Regreso  15 de Enero<br><br>
+
+						¿QUE VISITAMOS?:<br> 
+						PURMAMARCA, LA QUIACA, VILLAZÓN, POTOSÍ, UYUNI, LA PAZ, CUZCO, AGUAS CALIENTES, MACHU PICCHU, AREQUIPA, ARICA, IQUIQUE, PASO DE JAMA, TILCARA VISITA A LA ZONA FRANCA DE IQUIQUE EN CHILE. <br><br>
+
+						INCLUYE EXCURSIÓN, TRASLADO, TREN Y ENTRADA A MACHU PICCHU, VISITA A LA ZONA FRANCA DE CHILE EL VIAJE CUENTA CON 2 DIAS DE PLAYA IQUIQUE!! <br>
+
+					</p>
+				</div>
+				<div class="col-md-12">
+					<p> <b>¿QUÉ INCLUYE EL VIAJE?</b><br><br>
+						•   	Traslado en bus ida y vuelta- Coche  cama <br>
+						•   	Servicio a bordo (mantas, snack,  bebidas frías y calientes)<br>
+						•   	Alojamiento por 7 Noches en hostel u hotel según destino - 1 noche en Uyuni / 1 noche en la Paz / 3 noches en Cuzco / 1 noches en Aguas Calientes/ 1 noche en  Iquique<br>
+						•   	Desayunos en hospedajes<br>
+						•   	Desayuno extra en Potosí y la Paz (día de llegada)<br>
+						•   	1 Cena<br>
+						•     	Asistencia al viajero<br>
+						•   	Traslados en destino a distintos puntos diferenciales según itinerario<br>
+						•   	Traslado  ida y vuelta EN TREN a AGUAS CALIENTES <br>
+						•   	Entrada a Machu Picchu  <br>
+						•     Visita  a la Zofri -Chile<br>
+						•  	Coordinación permanente con personal de la empresa.<br>
+						•   	Buena onda, viaje entre amigos o en pareja con muchas ganas de conocer algo nuevo!<br><br>
+						 
+						<b> El paquete no incluye: </b><br>
+						•     Bebidas, cenas y almuerzos no especificados <br>
+						•      Excursiones opcionales<br>
+						•      Ticket de entradas no especificadas como incluidas<br>
+						Los países que visitamos son muy accesibles para almorzar y cenar.<br><br>
+						 
+						 Todas las habitaciones menos las dobles, podes viajar solo/a y no pagas de más. :) <br><br>
+
+						<b>¿QUE CUESTA EL VIAJE? </b><br> <br> 
+						Habitación óctuple  con baño compartido             USD:   670<br> 
+						Habitación cuádruple con baño compartido          USD:   710  <br> 
+						Habitación cuádruple con baño privado                USD:   750<br> 
+						Habitación con cucheta baño privado                   USD:   760  Base doble<br> 
+						Habitación base doble con baño compartido         USD:  770  Base doble<br> 
+						Habitación base doble con baño privado matri.     USD:  790  Base doble<br> <br> 
+
+						ADICIONAR $ 9000 DE IMPUESTOS.  (U$D 220)<br> <br> 
+
+						Precios en dólares hasta  el 1 de Noviembre<br> <br> 
+
+						INCLUYE BUTACA CAMA<br> <br> 
+
+						Se toma como referencia el Hostel Mama Simona (Cuzco) en el resto de los destinos en algunos casos se subdividira la habitación en cuadruples, Triples o dobles. <br> 
+
+						Los que contraten Doble tendran doble en todos los destinos<br> 
+
+						Los de Cuádruple serán cuádruple y doble en el resto de los destinos<br> 
+
+						Lo que contraten Óctuple podrán ser cuádruple, triple o doble. en los otros destinos<br> <br> 
+
+
+						Consulta financiacion segun tarjeta <br> <br> 
+
+						*Precios finales con impuestos incluidos<br> <br> 
+
+						Precio del dólar según Banco de Córdoba <a href="https://www.bancor.com.ar/718_APP/ ">https://www.bancor.com.ar/718_APP/ </a><br> <br> 
+
+						<b>¿CÓMO HACES PARA VIAJAR?</b> <br> 
+
+						Primero llena este formulario con tus datos para comenzar a vivir el viaje!!!<br><br>  
+
+						EL CUPO ES LIMITADO TE PUEDES PREINSCRIBIR EN :<br> 
+
+						SALIDA 1 DE ENERO: <br> 
+
+						<a href="https://goo.gl/forms/dsch7Pbffqv1iOBV2">https://goo.gl/forms/dsch7Pbffqv1iOBV2</a> <br> 
+
+						(COPIAR Y PEGAR EN EL NAVEGADOR) <br><br>  
+
+						Segundo, concreta la reserva de tu lugar, llegate por la agencia Dogma Viajes abonando una seña del 30 % o Podes pagarla vía transferencia bancaria o Mercado Pago.<br> <br> 
+
+						El cupo de viajeros es de solo 42 afortunados, tenes que ser parte del grupo! <br> 
+
+						te lo mereces!!! 🙂<br> 
+						
+					</p>
+				</div>
+			</div>
+
+		<div class="row articulo" id="brasilx4">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/int/brasilx4.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+
+			<div class="col-md-8">
+					<p> <b>LITORAL BRASILERO X 4</b> <br>
+
+						EN BUS <br><br>
+
+						TE TRAEMOS UNA PROPUESTA DIFERENTE:EL VIAJE IDEAL PARA DESCONECTARSE Y ENCONTRARSE CON LA NATURALEZA!!! Y TAMBIEN DIVERTIRSE!!<br><br>
+
+
+						*SALIDA desde Córdoba: <br>
+
+						Salida 16 de de Enero 23hs<br>
+						Regreso  30 de Enero<br><br>
+
+						¿QUE VISITAMOS?:<br> 
+						GUARDA DO EMBAU, ILHA DO MEL, CURITIBA Y CAMBORIU. <br><br>
+
+					</p>
+				</div>
+				<div class="col-md-12">
+					<p> <b>¿QUÉ INCLUYE EL VIAJE?</b><br><br>
+						•   	Traslado en bus ida y vuelta- Coche  cama<br>
+						•   	Servicio a bordo (mantas, snack,  bebidas frías y calientes)<br>
+						•    	Alojamiento por 9 Noches en hostel u hotel según destino:
+						3 noches en Guarda do Embaú  / 04 noches en Ilha do Mel / 2 noches en Camboriu<br>
+						•   	Desayunos en hospedajes<br>
+						•   	 Asistencia al viajero<br>
+						•   	Traslados en destino según itinerario<br>
+						•   	Traslado  ida y vuelta EN BARCO a ILHA DO MEL <br>
+						•   	Paseo en Barco a la playa de Brasilia en Ilha do Mel<br>
+						•     Noche de Bienvenida en Ilha do Mel<br>
+						•     Dia libre y paseo en CURITIBA<br>
+						•  	Coordinación permanente con personal de la empresa.<br>
+						•   	Buena onda, viaje entre amigos o en pareja con muchas ganas de conocer algo nuevo! <br><br>
+
+						<b> El paquete no incluye: </b><br>
+						•     Bebidas, cenas y almuerzos no especificados<br>
+						•      Excursiones opcionales<br>
+						•      Ticket de entradas no especificadas como incluidas <br>
+						Todas las habitaciones menos las dobles, podes viajar solo/a y no pagas de más. :).<br><br>
+						 
+						<b>¿QUE CUESTA EL VIAJE?</b><br><br>
+
+						Precios en promoción ( hasta el 10 de octubre) <br><br>
+
+						<b>¿QUE CUESTA EL VIAJE?</b><br><br>
+
+						Precios en promoción ( hasta el 10 de octubre) <br>
+						Habitación SEXTUPLE      con baño privado          USD: 640<br>
+						Habitación SEXTUPLE      sin baño privado           USD:  620<br>
+						Habitación CUADRUPLE  sin baño privado           USD: 670<br>
+						Habitación CUADRUPLE  con baño privado          USD: 690<br>
+						Habitación TRIPLE            con baño privado          USD: 770<br>
+						Hostel + hotel<br>
+						Habitación Base doble con baño privado matri.  std   USD: 730  base doble<br>
+						Posada+hotel<br>
+						Habitación Base doble con baño privado matri.  lujo   USD: 810  base doble<br>
+						Habitación Base doble con baño privado twin.    std    USD: 790  base doble<br><br>
+
+
+						Se toma como referencia el Hostel Encantadas (Ilha do Mel), en el resto de los destinos en algunos casos se subdividira la habitación en cuadruples, Triples o dobles. <br><br>
+
+						Los que contraten Doble tendran doble en todos los destinos<br>
+						Los de Cuádruple serán cuádruple y doble en el resto de los destinos<br>
+						Consulta financiacion segun tarjeta <br><br>
+
+						*Precios finales con impuestos incluidos<br><br>
+
+						Precio del dólar según Banco de Córdoba <br><br>
+
+
+						<b>¿CÓMO HACES PARA VIAJAR?</b> <br><br>
+
+						Primero llena este formulario con tus datos para comenzar a vivir el viaje!!!<br><br>
+
+						<b>EL CUPO ES LIMITADO TE PUEDES PREINSCRIBIR EN:</b><br>
+
+						<a href="https://goo.gl/forms/RoYiYam2JfXyesCq1">https://goo.gl/forms/RoYiYam2JfXyesCq1</a><br><br>
+
+						 (COPIAR Y PEGAR EN EL NAVEGADOR) <br><br>
+
+						Segundo, concreta la reserva de tu lugar, llegate por la agencia Dogma Viajes abonando una seña del 30 % o Podes pagarla vía transferencia bancaria o Mercado Pago.<br>
+						El cupo de viajeros es de solo 42 afortunados, tenes que ser parte del grupo! <br>
+						te lo mereces!!! 🙂<br>
+
+						
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="rio">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/int/rio.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>RIO, BUZIOS Y ANGRA DOS REIS GOL, CUPOS CONFIRMADOS</b> <br><br>
+
+						EN AEREO <br><br>
+
+						Salidas 15/09 Y 13/10<br><br>
+
+						Incluye:<br><br>
+						• Aéreos desde córdoba con gol.<br>
+						• Traslados aeropuerto/hotel/aeropuerto.<br>
+						• 07 u 08 noches de alojamiento según corresponda.<br>
+						• Régimen según corresponda.<br>
+						• Asistencia al viajero.<br><br>
+
+						Tarifas<br><br>
+						• Rio de Janeiro precio por persona en base dbl desde usd 1045<br>
+						• Buzios desde usd 1107 por persona en base dbl<br>
+						• buzios + rio de janeiro desde usd 1074 por persona en base dbl<br>
+						• Angra dos Reis + Rio de Janeiro desde usd 1325 por persona en base dbl<br>
+
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="salvadordebahia">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/int/salvadordebahia.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>SALVADOR DE BAHIA</b> <br><br>
+
+						EN AÉREO <br><br>
+
+						Salidas 09/09 y 16/09 - 13/10 - 03/11 y 17/11 - 02/12<br><br>
+						Incluye:<br><br>
+						•	Aéreos COR/SSA/COR con GOL<br>
+						•	Traslados aeropuerto/hotel/aeropuerto<br>
+						•	06 o 07 noches de alojamiento con desayuno<br>
+						•	Excursión: City Tour regular<br>
+						•	Asistencia al viajero<br><br>
+						 
+						PRECIO POR PERSONA DESDE  USD 950<br>
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="puntacana">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/int/puntacana.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>PUNTA CANA</b> <br><br>
+
+						EN AÉREO <br><br>
+
+						Salidas 17/11 2018 – 05 y 19/01 – 02/03 2019 <br><br>
+						Incluye:<br><br>
+						•Aéreo COR/PUJ/COR con Aerolíneas Argentinas<br>
+						•Traslados Aeropuerto/Hotel/Aeropuerto<br>
+						•07 Noches de alojamiento en Punta Cana<br>
+						•Régimen All Inclusive.<br>
+						•Seguro de Asistencia (Consultar condiciones mayores de 70 años).<br><br>
+						NO INCLUYE<br>
+						•3% de Gastos Administrativos<br>
+						•Entradas, comidas, bebidas ni gastos extras de ninguna índole<br><br>
+
+						BASE DOBLE A PARTIR DE USD2242.00 X PERSONA<br>
+
+
+					</p>
+				</div>
+			</div>
+
+			<div class="row articulo" id="camboriu">
+				<div class="col-md-4">
+					<img src="img/destinoscomp/int/camboriu.jpg" alt="" class="img-responsive img-rounded img-destinos">
+				</div>
+					
+				<div class="col-md-8">
+					<p> <b>CAMBORIU - CANASVIEIRAS </b> <br><br>
+
+						EN BUS <br><br>
+
+						Salidas todos los domingos 2018/2019 <br><br>
+						
+						Incluye:<br><br>
+						•  Bus Grupal Mix desde Córdoba<br>
+						•  07 Noches de Alojamiento<br>
+						•  Desayuno y Cena<br>
+						•  Coordinador en Viaje y en Destino<br>
+						•  Asistencia al Viajero<br><br>
+
+
+						PRECIOS BASE DOBLE POR PERSONA DESDE $13600<br>
+
+					</p>
+				</div>
+			</div>			
+
+		</section>
+		
+	</div>
+		<footer>
+			<div class="row"><div class="col-xs-12"><p><br>Dogma 2018 | Es simple...hacemos viajes y viajamos para poder disfrutarlos con vos</p></div></div>
+		</footer>	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(window).load(function() {
+		$('#preloader').fadeOut('slow');
+		$('body').css({'overflow':'visible'});
+	})
+	</script>		
+
+</body>
+</html>
